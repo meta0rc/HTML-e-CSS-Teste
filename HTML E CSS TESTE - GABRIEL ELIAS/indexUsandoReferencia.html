@@ -1,0 +1,152 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Responsivo feito sem uso de Frameworks">
+    <meta name="author" content="Gabriel Elias">
+    <meta name="copyright" content="© Gabriel Elias">
+    <meta name="keywords" content="seo, html, css">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Site teste Seo, html Css">
+    <script src="https://kit.fontawesome.com/7d51930cf8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./nivo-slider/jquery.nivo.slider.js"></script>
+    <link rel="icon" href="img/procurar.png">
+    <title>Teste de HTML e CSS</title>
+</head>
+
+<body>
+    <header>
+        <span>
+            <ul>
+                <li>
+                    <a href="#">11 1234-1234</a>
+                    <a href="#">11 1234-1234</a>
+                </li>
+            </ul>
+        </span>
+        <label for="chec">
+                <i id="icone-b" class="fas fa-bars" onclick="abrirMenu()"></i>
+            </label>
+        <input type="checkbox" name="" id="chec">
+        <section class="section-header container">
+            <img class="logo" src="./img/logoSeo.png" alt="Logo">
+            <nav id="navBar">
+                <ul id="menu">
+                    <li> <i class="fas fa-times" id="close" onclick="abrirMenu()"></i></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">EMPRESA</a>
+                        <ul>
+                            <li><a href="#">SUBMENU 1</a></li>
+                            <li><a href="#">SUBMENU 1</a></li>
+                            <li><a href="#">SUBMENU 1</a></li>
+                            <li><a href="#">SUBMENU 1</a>
+                                <ul class="submenu2">
+                                    <li><a href="#">SUBMENU 2</a></li>
+                                    <li><a href="#">SUBMENU 2</a></li>
+                                    <li><a href="#">SUBMENU 2</a></li>
+                                    <li><a href="#">SUBMENU 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CLIENTES</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!--Fim do cabecalho-->
+    <!--Banner -->
+    <section>
+        <div class="banner">
+            <div id="slider" class="container nivoSlider theme-default">
+                <img src="./img/seoBanner.png" alt="">
+                <img src="./img/seoBanner2.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <!--Fim do banner-->
+    <section>
+        <main class="container">
+            <div>
+                <h1>TESTE DE HTML E CSS</h1>
+                <p>Quesitos de Avaliação</p>
+                <ul>
+                    <li>Organização do código (quanto mais limpo melhor)</li>
+                    <li>Nivel de detalhismo (quanto mais identico melhor)</li>
+                    <li>Tempo de Desenvolvimento (seja cincero ao enviar o tempo gasto)</li>
+                </ul>
+                <p>Obrigado e boa sorte!</p>
+            </div>
+            <img class="img325px" src="./img/325px.jpg" alt="logo">
+            <div class="conteudo-destaque container">
+                <h2>BOXES DESTAQUES</h2>
+                <article>
+                    <ul class="boxes">
+                        <li>
+                            <a href="https://neilpatel.com/br/o-que-e-seo-o-guia-completo-da-otimizacao-dos-motores-de-busca/">
+                                <img src="./img/boxe1.webp" alt="seo neil patel" title="Guiga dos motores de busca ">
+                                <p>SEO 2020</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dccomunic.com.br/seo-google/">
+                                <img src="img/boxe2.jpg" alt="google seo" title="Google Seo, o que é Seo? ">
+                                <p>Google SEO</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.hostinger.com.br/tutoriais/o-que-e-seo/">
+                                <img src="img/boxe3.webp" alt="O que é seo?" title="O que é SEO? hostinger">
+                                <p>O que é Seo?</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blog.hotmart.com/pt-br/o-que-e-seo/">
+                                <img src="img/boxe4.jpeg" alt="SEO" title="Como alcançar as primeiras posições?">
+                                <p>Primeiras posições</p>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </main>
+    </section>
+    <!--Fim da main-->
+    <footer>
+        <aside>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">EMPRESA</a></li>
+                <li><a href="">CLIENTES</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </aside>
+        <h3 class="h3-footer">Responsivo</h3>
+        <h4>RODAPE</h4>
+    </footer>
+    <!--Funcoes JS, menu mobile e Carregar o Slider-->
+    <script>
+        function abrirMenu() {
+            const myChec = document.getElementById("chec")
+            const rar = document.getElementById("navBar")
+            const close = document.getElementById("close")
+
+            if (myChec.checked || close.clicked) {
+                rar.style.right = '-100%'
+            } else {
+                rar.style.right = '0'
+            }
+        }
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+    </script>
+</body>
+
+</html>
